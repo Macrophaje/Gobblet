@@ -1,0 +1,87 @@
+body {
+
+}
+
+.game-area {
+	display: block;
+	margin: auto;
+	width: 40%;
+}
+
+li {
+	list-style: none;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+.game-piece-row {
+	width: 800px;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.game-piece img {
+	width: 180px;
+	outline: none;
+}
+
+.game-piece {
+	margin:0 auto;
+}
+
+.grid {
+	width: 800px;
+	height: 800px;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-square {
+	height: 25%;
+	width: 25%;
+	float: left;
+	border-top: 4px solid black;
+	border-left: 4px solid black;
+}
+.grid-square:nth-of-type(4n) {
+	border-right: 4px solid black;
+}
+
+.grid-square:nth-last-of-type(-n+4) {
+	border-bottom: 4px solid black;
+}
+
+.grid-square.player-0 {
+	background-image: url("img/yellow-fill.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.grid-square.player-1 {
+	background-image: url("img/Black-fill.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.grid-square.size-4 {
+	background-size: 180px;
+}
+
+.grid-square.size-3 {
+	background-size: 137px;
+}
+
+.grid-square.size-2 {
+	background-size: 104px;
+}
+
+.grid-square.size-1 {
+	background-size: 80px;
+}
